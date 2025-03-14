@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+</head>
+<body class="mx-10 my-10 bg-[#e9ecf7] ">
+   <header>
+    <div class="flex justify-between items-center mb-6 bg-[#F4F7FF] border-zinc-400 rounded-xl p-4 shadow-lg ">
+
+        <div class="flex items-center space-x-2">
+      
+            <img src="./A5-Dev-Board/assets/logo.png" alt="">
+           
+            <h1 class="text-2xl font-semibold text-gray-800">Dev <span class="font-bold">Board</span></h1>
+        </div>
+
+      
+        <div class="flex items-center space-x-4">
+   
+            <div class="flex items-center space-x-1 ">
+                <button id="BackToDesk-btn" class="bg-blue-600 text-white font-semibold h-10 p-2 border rounded-xl">Back to Desk</button>
+        </div>
+    </div>
+   </header>
+   <main>
+    <h2 class=" text-3xl font-bold text-center my-5">Blogs</h2>
+    <div class="border rounded-xl p-5 bg-white ">
+        <h2 class="text-2xl font-bold ">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <p class="text-lg font-medium">There are two ways to select an element in the DOM.The frist is document.getElementById which only selects a specific element.And the second is that querySelector will return only the frist element no matter how many element it finds.</p>
+    </div>
+    <div  class="border rounded-xl p-5 bg-white mt-5">
+        <h2 class="text-2xl font-bold ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+        <p class="text-lg font-medium">innerHTML use it to get the internal HTML cntent of any HTML element as an HTML string.it can use also it to set or change element's innerHTML content.the innerText property of the HTMLElement interface represents the rendered text contents of a node and its descendants.textContent is a property that returns or sets all the text content (Hidden+Visible)of an HTML element.</p>
+    </div>
+    <div  class="border rounded-xl p-5 bg-white mt-5">
+        <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+        <p class="text-lg font-medium">Event delegation in JavaScript is a pattern that efficiently handles events.</p>
+    </div>
+    <div  class="border rounded-xl p-5 bg-white mt-5">
+        <h2 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+        <p class="text-lg font-medium">Event bubbling directs an event to its target.it workes like this,when an element (like a button )is clicked,an event is directed to the element.if an event handle is set for the element .if an event is set for the element,the event hadler is triggered.then the event"bubble up" to the element parent.</p>
+    </div>
+    <div  class="border rounded-xl p-5 bg-white mt-5">
+        <h2 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+        <p class="text-lg font-medium">document.createElement() is used to add new elements.it is then added to the DOM with appendChild().removeChild() is used to remove anelement.</p>
+    </div>
+   </main>
+   
+     <script src="./script/completed2.js"></script>
+</body>
+</html>
+

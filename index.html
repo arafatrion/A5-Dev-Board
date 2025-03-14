@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0, 500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white p-6 mx-5">
+    <!-- Header Section -->
+    <div class="flex justify-between items-center mb-6 bg-[#F4F7FF] border-zinc-400 rounded-xl p-4 shadow-lg ">
+
+        <div class="flex items-center space-x-2">
+      
+            <img src="./A5-Dev-Board/assets/logo.png" alt="">
+           
+            <h1 class="text-2xl font-semibold text-gray-800">Dev <span class="font-bold">Board</span></h1>
+        </div>
+
+        <!-- Right Side Icons -->
+        <div class="flex items-center space-x-4">
+   
+            <div class="flex items-center space-x-1 ">
+         
+                 <img src="./A5-Dev-Board/assets/checkbox.png" alt="">
+       
+                <span id="navbarCounter" class="text-3xl font-bold">23</span>
+            </div>
+             <img src="./A5-Dev-Board/assets/theme-btn.png" class="cursor-pointer" alt="">
+
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Left Section (Tasks & Date) -->
+        <div class="col-span-3 space-y-6">
+
+           
+            <!-- Discover Something New Card -->
+            <div class="bg-white text-white p-6 rounded-lg flex justify-between items-center">
+
+
+
+
+                <div class="bg-[#F4F7FF] text-black p-4 rounded-lg flex items-center space-x-2">
+              
+                    <img src="./A5-Dev-Board/assets/checkbox.png" alt="">
+                   
+                   <div>
+                       <p class="text-lg font-semibold">Task Assigned</p>
+                       <p id="taskCount" class="text-3xl font-bold">6</p>
+                   </div>
+               </div>
+                <div  id="discover-btn" class="flex items-center space-x-4 border cursor-pointer rounded-lg bg-gradient-to-r from-[#6C7FFA] to-[#9BA8F8] p-2 ">
+                     <img src="./A5-Dev-Board/assets/board.png" alt="">
+                   
+                    <button class="text-lg font-semibold">Discover Something New Today!</button>
+                </div>
+                
+                <!-- Calendar Section -->
+                <div class="bg-[#F4F7FF] text-black p-4 rounded-lg flex items-center space-x-2">
+              
+                     <img src="./A5-Dev-Board/assets/calender.png" alt="">
+                    
+                    <div>
+                        <p class="text-1xl font-bold">Wed</p>
+                        <p class="text-lg font-bold">Mar 3 2025</p>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Task Cards Grid -->
+            <div class="grid grid-cols-1  md:grid-cols-3 gap-4">
+                <!-- Task Card Example -->
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800">ShopEase</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Fix Mobile Button Issue</p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Debug using Chrome DevTools, check for overlapping... </p>
+                    <p class="text-xs mt-4"> Deadline <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn" class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800">CloudSync</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Add Dark Mode</p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Store the user's preference in localStorage, update CSS vari...                    </p>
+                    <p class="text-xs mt-4">
+                        Deadline  <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn2" class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                       Completed
+                    </button>
+                </div>
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800  ">SwiftPay</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Optimize  Home page</p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Debug using Chrome DevTools, check for overlapp... </p>
+                    <p class="text-xs mt-4">
+                        Deadline <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn3" class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800  bg-[#F4F7FF] ">Meta</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Add new emoji 🤲</p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Debug using Chrome DevTools, check for overlapp... 
+                    </p>
+                    <p class="text-xs mt-4">
+                        Deadline <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn4"class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800">Google LLC</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Integrate OpenAI API </p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Debug using Chrome DevTools, check for overlapping...
+                    </p>
+                    <p class="text-xs mt-4">
+                        Deadline <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn5"class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-bold text-gray-800">Glassdoar</h2>
+                    <p class="text-sm text-gray-500 font-semibold">Improve Job searching </p>
+                    <p class="text-xs text-gray-400 mt-2">
+                        Debug using Chrome DevTools, check for overlapping...
+                    </p>
+                    <p class="text-xs mt-4">
+                        Deadline <br> <span class="font-bold">21 March 2025</span>
+                    </p>
+                    <button id="cmp-btn6" class="mt-2 inline-block cursor-pointer bg-blue-500 text-white text-sm px-2 py-1 rounded">
+                        Completed
+                    </button>
+                </div>
+
+              
+            </div>
+        </div>
+
+        <!-- Right Sidebar (Activity Log) -->
+        <div  class="bg-[#F4F7FF] p-6 rounded-lg shadow-md space-y-4">
+            <h2 class="text-lg font-semibold text-gray-800 flex items-center space-x-2">
+               
+                 <img src="./A5-Dev-Board/assets/activity.png" alt="">
+          
+                <span id="activitylog">Activity Log</span>
+            </h2>
+
+            <button class="bg-blue-500 cursor-pointer text-white px-4 py-2 rounded-lg w-full">
+                Clear History
+            </button>
+
+            <div>
+                <p id="activityMessage" class="text-sm text-gray-500">
+                    You have completed the task "Add Dark Mode" at 12:48:15 PM
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./script/completed.js"></script>
+    <script src="./script/completed2.js"></script>
+</body>
+</html>
